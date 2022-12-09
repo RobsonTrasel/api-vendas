@@ -3,7 +3,7 @@ import express, { NextFunction, Request, Response } from "express";
 import cors from "cors"
 import { routes } from './routes/index'
 import AppError from '../errors/appError';
-import "../typeorm/index";
+import '../typeorm/data-source'
 
 const app = express()
 
@@ -25,3 +25,5 @@ app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
 app.listen(3333, () => {
   console.log("[Server] Server is running")
 })
+
+

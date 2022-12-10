@@ -23,7 +23,7 @@
       "lint": "eslint . --ext .ts",
       "lint-fix": "eslint . --ext .ts --fix",
       "start": "ts-node src/index.ts",
-      "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+      "typeorm": "ts-node-dev -r ./node_modules/typeorm/cli.js"
    },
    "dependencies": {
       "cors": "^2.8.5",

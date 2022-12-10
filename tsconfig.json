@@ -5,16 +5,23 @@
          "es6"
       ],
       "target": "es5",
+      "baseUrl": "./",
       "module": "commonjs",
       "moduleResolution": "node",
       "outDir": "./build",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
+      "strictPropertyInitialization": false,
       "sourceMap": true,
       "esModuleInterop": true,
       "rootDir": "src",
       "resolveJsonModule": true,
       "noImplicitAny": true,
-      "allowJs": true
+      "allowJs": true,
+      "paths": {
+         "@config/*":["src/config/*"],
+         "@modules/*":["src/modules/*"],
+         "@shared/*":["src/shared/*"],
+      }
    }
 }

@@ -7,8 +7,7 @@ export const AppDataSource = new DataSource ({
   username: "postgres",
   password: "docker",
   database: "postgres",
-  migrations: ["./src/shared/typeorm/migrations/*.ts"],
-  
+  migrations: ["./src/shared/typeorm/migrations/*.ts"]
 })
 
 

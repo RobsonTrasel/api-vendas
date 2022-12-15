@@ -3,7 +3,7 @@ import express, { NextFunction, Request, Response } from "express";
 import cors from "cors"
 import { routes } from './routes/index'
 import AppError from '../errors/appError';
-import { AppDataSource } from '../typeorm/data-source';
+import '../typeorm/'
 
 const app = express()
 
@@ -26,8 +26,5 @@ app.listen(3333, () => {
   console.log("[Server] Server is running")
 })
 
-AppDataSource.initialize().then(() => {
-  console.log('[Database] Database is running')
-}).catch(err => {
-  console.log('[Database] Error during Data Source initialization', err)
-})
+
+
